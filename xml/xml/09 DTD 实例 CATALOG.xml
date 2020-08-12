@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 产品目录 DTD -->
+<!DOCTYPE CATALOG [
+        <!ENTITY AUTHOR "John Doe">
+        <!ENTITY COMPANY "JD Power Tools, Inc.">
+        <!ENTITY EMAIL "jd@jd-tools.com">
+
+        <!ELEMENT CATALOG (PRODUCT+)>
+        <!ELEMENT PRODUCT (SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+
+        <!ELEMENT SPECIFICATIONS (#PCDATA)>
+        <!ELEMENT OPTIONS (#PCDATA)>
+        <!ELEMENT PRICE (#PCDATA)>
+        <!ELEMENT NOTES (#PCDATA)>
+
+        <!ATTLIST PRODUCT
+                NAME CDATA #IMPLIED
+                CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+                PARTNUM CDATA #IMPLIED
+                PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+                INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+        <!ATTLIST SPECIFICATIONS
+                WEIGHT CDATA #IMPLIED
+                POWER CDATA #IMPLIED>
+
+        <!ATTLIST OPTIONS
+                FINISH (Metal|Polished|Matte) "Matte"
+                ADAPTER (Included|Optional|NotApplicable) "Included"
+                CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+        <!ATTLIST PRICE
+                MSRP CDATA #IMPLIED
+                WHOLESALE CDATA #IMPLIED
+                STREET CDATA #IMPLIED
+                SHIPPING CDATA #IMPLIED>
+        ]>
+<!-- CATALOG 具有多个 PRODUCT-->
+<CATALOG>
+    <!-- PRODUCT 具有 多个SPECIFICATIONS 零次或一次OPTIONS 多个PRICE  零次或一次NOTES-->
+    <!-- PRODUCT 据具有属性  NAME CATEGORY PARTNUM PLANT INVENTORY-->
+    <PRODUCT>
+        <!-- SPECIFICATIONS 具有属性 WEIGHT POWER-->
+        <SPECIFICATIONS></SPECIFICATIONS>
+        <!-- OPTIONS 具有属性 FINISH ADAPTER CASE-->
+        <OPTIONS></OPTIONS>
+        <!-- PRICE 具有属性  MSRP WHOLESALE STREET SHIPPING-->
+        <PRICE></PRICE>
+        <NOTES></NOTES>
+    </PRODUCT>
+</CATALOG>

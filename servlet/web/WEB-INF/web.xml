@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--配置 servlet-->
+    <servlet>
+        <!--servlet 名称,自定义，一般为类名-->
+        <servlet-name>ServletImpl</servlet-name>
+        <!-- servlet 类的全名：包名+类名-->
+        <servlet-class>com.hfm.servlet.ServletImpl</servlet-class>
+    </servlet>
+
+    <!--设置servlet 的访问路径-->
+    <servlet-mapping>
+        <!-- servlet名称，和上面的名称保持一致 -->
+        <servlet-name>ServletImpl</servlet-name>
+        <!-- 公开给外部访问这个servlet的名称（路径） -->
+        <url-pattern>/servletImpl</url-pattern>
+    </servlet-mapping>
+
+    <!-- 一个 servlet 对应一个 servlet-mapping，只有同时设置 servlet 与 servlet-mapping 才能使 servlet 访问成功 -->
+    <!--配置 servlet-->
+    <servlet>
+        <!--servlet 名称,自定义，一般为类名-->
+        <servlet-name>ExtendsGenericServlet</servlet-name>
+        <!-- servlet 类的全名：包名+类名-->
+        <servlet-class>com.hfm.servlet.ExtendsGenericServlet</servlet-class>
+    </servlet>
+
+    <!--设置servlet 的访问路径-->
+    <servlet-mapping>
+        <!-- servlet名称，和上面的名称保持一致 -->
+        <servlet-name>ExtendsGenericServlet</servlet-name>
+        <!-- 公开给外部访问这个servlet的名称（路径） -->
+        <url-pattern>/exGenericServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 一个 servlet 对应一个 servlet-mapping，只有同时设置 servlet 与 servlet-mapping 才能使 servlet 访问成功 -->
+    <!--配置 servlet-->
+    <servlet>
+        <!--servlet 名称,自定义，一般为类名-->
+        <servlet-name>ExtendsHttpServlet</servlet-name>
+        <!-- servlet 类的全名：包名+类名-->
+        <servlet-class>com.hfm.servlet.ExtendsHttpServlet</servlet-class>
+    </servlet>
+
+    <!--设置servlet 的访问路径-->
+    <servlet-mapping>
+        <!-- servlet名称，和上面的名称保持一致 -->
+        <servlet-name>ExtendsHttpServlet</servlet-name>
+        <!-- 公开给外部访问这个servlet的名称（路径） -->
+        <url-pattern>/exHttpServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AutoServlet</servlet-name>
+        <servlet-class>com.hfm.servlet.AutoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AutoServlet</servlet-name>
+        <url-pattern>/autoServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>13 jq Dom 编程案例</title>
+		<script src="Resources/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="13 Jq Dom 编程案例.css" type="text/css" />
+	</head>
+	<script src="13 jq Dom 编程案例.js" type="text/javascript"></script>
+
+	<body>
+		<table id="tab1" border="1" width="80%" align="center">
+			<tr>
+				<td colspan="5"><input type="button" value="删除"></td>
+			</tr>
+			<tr style="background-color: #999999;">
+				<th><input type="checkbox" onclick="changeAll(this)"></th>
+				<th>分类ID</th>
+				<th>分类名称</th>
+				<th>分类描述</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemSelect"></td>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemSelect"></td>
+				<td>2</td>
+				<td>电脑办公</td>
+				<td>电脑办公类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemSelect"></td>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" class="itemSelect"></td>
+				<td>4</td>
+				<td>家居饰品</td>
+				<td>家居饰品类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+		</table>
+
+		<!--QQ 表情-->
+		<div class="emoji">
+			<ul>
+				<li><img src="Resources/img/01.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/02.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/03.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/04.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/05.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/06.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/07.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/08.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/09.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/10.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/11.gif" height="22" width="22" alt="" /></li>
+				<li><img src="Resources/img/12.gif" height="22" width="22" alt="" /></li>
+			</ul>
+			<p class="word">
+				<strong>请发言：</strong>
+				<img src="Resources/img/12.gif" height="22" width="22" alt="" />
+			</p>
+		</div>
+		<div class="border">
+			<select id="leftName" multiple="multiple">
+				<option>张三</option>
+				<option>李四</option>
+				<option>王五</option>
+				<option>赵六</option>
+			</select>
+			<div id="btn">
+				<input type="button" id="toRight" value="-->"><br>
+				<input type="button" id="toLeft" value="<--">
+			</div>
+
+			<select id="rightName" multiple="multiple">
+				<option>钱七</option>
+			</select>
+		</div>
+	</body>
+
+</html>

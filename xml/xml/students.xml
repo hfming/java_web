@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--文档声明-->
+<!--处理指令-->
+<!--<?xml-stylesheet  href="01.css" type="text/css"?>-->
+<!--根标签-->
+<students>
+	<student id="001" subject="java">
+		<name>hfm</name>
+		<age>24</age>
+	</student>
+	<student id="002">
+		<name>hfm</name>
+		<age>&quot;24&quot;</age>
+		<!--严格区分大小写-->
+	</student>
+	<!--</Student>-->
+	<!-- CDATA 块-->
+	<![CDATA[<itcast><br/></itcast>]]>
+</students>

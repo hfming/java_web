@@ -1,0 +1,38 @@
+#main {
+	width: 50%;
+	height: 200px;
+	border-style: solid;
+	margin-left: 25%;
+	margin-top: 25%;
+	box-sizing: border-box;
+	/*background-image: url(../html/Resourecs/image/banner_1.jpg);*/
+	background-repeat: no-repeat;
+}
+
+input[type=text],
+input[type=password] {
+	border-radius: 5px;
+}
+
+label {
+	text-align: right;
+}
+
+#user-name {
+	margin-left: 20%;
+	margin-top: 10%;
+}
+
+#user-pass {
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+input[type=submit] {
+	margin-left: 25%;
+	margin-top: 5%;
+}
+
+input[type=button] {
+	margin-left: 10%;
+}

@@ -1,0 +1,49 @@
+<!-- 约束，声明-->
+<!DOCTYPE html>
+
+<!-- html 开始标签-->
+<!--<html> 与 </html> 之间的文本描述网页 -->
+<!-- html是由<html>开始，由</html>结束，在这之间是分<head>和<body>两部分 -->
+<!-- html 开始标签 lang="zh_CN" 表示中文 lang="en" 表示英文 -->
+<!-- 一个完整的 html 文件分为两个部分，包括头部文件(head)和文件主体(body),头部标记是<head></head>。在这对标记中的内容为头部内容,HTML中的头部-->
+<html lang="zh_CN">
+	<!--<head> 与 </head> 之间的用于定义文档的头部-->
+	<!-- 文件头，用户在浏览器窗口看不到，即内容不直接在网页上显示。 -->
+	<!-- 告诉浏览器如何解析 HTML 文件。是给 html 页面增加一些辅助或者属性信息，里面的内容会最先加载。-->
+	<!-- 可以用在 head 部分的标签：<title>,<base> <link>,<meta>,<script>,<style>以及文本标签 -->
+	<!-- 一般分为 3 部分，title 标签，css 样式，js 代码 -->
+
+	<head>
+		<!-- 定义网页标题 -->
+		<title>001 HTML 基本结构</title>
+
+		<!-- 关键词：keywords 对于开发人员没有作用；主要用于搜索引擎、网页的排名 推广 (SEO 优化)关键词是网页排名的一个因素。100% 权重 50% 33.3.% （3-5 个合适）-->
+		<!-- 告诉网爬虫，该网页主要是描述一般一个网页的关键字不要超过 3 个 -->
+		<meta name="keywords" content="HTML,java,javaWeb">
+		<!-- 描述：对网页的简单描述 -->
+		<meta name="description" content="this is my page">
+		<!-- 告诉浏览器使用什么码表解释 html文件，一般使用 UTF-8 码表  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+
+	<!-- 文件体，用户在浏览器窗口可以看到，body 标签里面存放的才是真正要显示的数据-->
+	<!-- 文件体（用户在浏览器的主体看得到） -->
+	<!-- <body> 与 </body> 之间的文本是可见的页面内容 -->
+
+	<body>
+		<pre>
+		 	head:是给 html 页面增加一些辅助或者属性信息，里面的内容会最先加载。
+		  	body:标签里面存放的才是真正要显示的数据
+            比较常用 mate 格式的有以下几个：
+				1.＜meta name="KEYWords" contect=""＞向搜索引擎说明你的网页的关键词；
+				2.＜meta name="DEscription" contect=""＞告诉搜索引擎你的站点的主要内容；
+				3.＜meta name="Author" contect="你的姓名"＞告诉搜索引擎你的站点的制作的作者；
+	  	</pre>
+		<!-- <p> 与 </p> 之间的文本被显示为段落 -->
+		<p>
+			段落1
+		</p>
+	</body>
+
+</html>
+<!-- html 结束标签-->

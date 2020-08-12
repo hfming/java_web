@@ -1,0 +1,33 @@
+ div {
+ 	width: 200px;
+ 	height: 100px;
+ 	/*边框颜色*/
+ 	border-left-color: #F00;
+ 	border-right-color: #0F0;
+ 	border-top-color: #00F;
+ 	border-bottom-color: #C90;
+ 	/*简写属性
+		1) 默认设置方向属性： 上 右 下 左
+		2）如果当前方向没有设置颜色，那么取对面的颜色*/
+ 	border-color: #F00 #0F0 #00F #C90;
+ 	/*边框宽度*/
+ 	border-left-width: 1px;
+ 	border-right-width: 2px;
+ 	border-top-width: 3px;
+ 	border-bottom-width: 4px;
+ 	/*简写属性*/
+ 	/*border-width:10px;*/
+ 	/*边框样式(注意： 边框只有加了 border-style 才会显示出来)
+				solid: 单实线
+				dashed: 虚线
+				dotted: 点
+				double: 双实线*/
+ 	border-left-style: solid;
+ 	border-right-style: dashed;
+ 	border-top-style: dotted;
+ 	border-bottom-style: double;
+ 	/*简写属性*/
+ 	/* border-style:solid; */
+ 	/*所有边框属性的简写属性*/
+ 	/* border:2px solid #F00; */
+ }

@@ -1,0 +1,16 @@
+table {
+	/*背景颜色*/
+	background-color: #0CF;
+	/*背景图片*/
+	background-image: url(https://hfm-resume.oss-cn-hangzhou.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%9B%BE%E6%A0%87.png);
+	/*设置背景图片是否重复，或如何重复
+			not-repeat: 不重复
+			repeat-x: x 轴重复
+			repeat-y: y 轴重复
+			repeat: x 和 y 轴重复(默认)*/
+	background-repeat: no-repeat;
+	/*设置背景的起始位置*/ 
+	background-position: top center;
+	/*简写属性*/
+	/*background: #3FF url(https://hfm-resume.oss-cn-hangzhou.aliyuncs.com/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E5%9B%BE%E6%A0%87.png) no-repeat top center;*/
+}

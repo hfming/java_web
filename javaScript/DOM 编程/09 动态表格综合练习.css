@@ -1,0 +1,24 @@
+table {
+	border: 1px solid;
+	border-collapse: 0px;
+	border-spacing: 0px;
+	text-align: center;
+	margin: auto;
+	width: 400px;
+}
+
+td {
+	border: 1px solid;
+}
+
+#tr_1{
+	background-color: #007BFF;
+	-webkit-text-fill-color: white;
+}
+
+span{
+	color: #007BFF;
+}
+tr:hover{
+	background-color: pink;
+}

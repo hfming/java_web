@@ -1,0 +1,33 @@
+div {
+	width: 140px;
+	height: 140px;
+	margin: 20px;
+	background: #9999CC;
+	border: #000 1px solid;
+	float: left;
+	font-size: 17px;
+	font-family: Roman;
+}
+
+/*待用的样式*/
+.one {
+	width: 200px;
+	height: 140px;
+	margin: 20px;
+	background: red;
+	border: #000 1px solid;
+	float: left;
+	font-size: 17px;
+	font-family: Roman;
+}
+
+.second {
+	width: 300px;
+	height: 340px;
+	margin: 20px;
+	background: yellow;
+	border: pink 3px dotted;
+	float: left;
+	font-size: 22px;
+	font-family: Roman;
+}

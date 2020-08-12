@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<contacts>
+	<contact>
+		<id></id>
+		<name></name>
+		<gender></gender>
+		<phone></phone>
+		<address></address>
+		<QQ></QQ>
+	</contact>
+	<contact>
+		<id></id>
+		<name></name>
+		<gender></gender>
+		<phone></phone>
+		<address></address>
+		<QQ></QQ>
+	</contact>
+	<contact>
+		<id></id>
+		<name></name>
+		<gender></gender>
+		<phone></phone>
+		<address></address>
+		<QQ></QQ>
+	</contact>
+	<contact>
+		<id></id>
+		<name></name>
+		<gender></gender>
+		<phone></phone>
+		<address></address>
+		<QQ></QQ>
+	</contact>
+</contacts> 

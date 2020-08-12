@@ -1,0 +1,93 @@
+body {
+	background: url(Resources/images/register_bg.png) no-repeat center;
+}
+
+#rg_layout {
+	border-style: solid;
+	width: 900px;
+	height: 500px;
+	box-sizing: border-box;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #EEEEEE;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+}
+
+.inner {
+	float: left;
+}
+
+#rg_sp_1 {
+	color: #FFD026;
+	font-size: 16px;
+}
+
+#rg_sp_2 {
+	color: #A6A6A6;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#div_left {
+	margin: 15px;
+}
+
+#div_right {
+	margin: 15px;
+}
+
+a {
+	color: pink;
+}
+
+#div_center {
+	width: 450px;
+}
+
+.td_left {
+	/*color: gray;*/
+	text-align: right;
+	height: 45px;
+}
+
+.td_right {
+	padding-left: 15px;
+}
+
+
+/*设置输入框*/
+
+input {
+	width: 250px;
+	height: 30px;
+	border-style: solid;
+	border-color: #A6A6A6;
+	border-width: 1px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+/*单独设置验证码*/
+#checkcode {
+	width: 100px;
+}
+
+#img_check {
+	height: 30px;
+	vertical-align: middle;
+}
+
+input[type=radio] {
+	width: 50px;
+	height: 20px;
+}
+
+#btn_sub {
+	width: 100px;
+	height: 40px;
+	border-radius: 1px;
+	background-color: #FFD026;
+	border-color:#FFD026 ;
+}

@@ -1,0 +1,22 @@
+table {
+	/*边框样式*/
+	border-style: solid;
+	/*合并表格的边框*/
+	border-collapse: collapse;
+	/*边框粗细*/
+	border-width: 1px;
+	/*长*/
+	width: 500px;
+	/*宽*/
+	height: 200px;
+	/*规定相邻单元格边框之间的距离。*/
+	border-spacing: auto;
+	/*规定表格标题的位置。*/
+	caption-side: left;
+}
+
+td,
+th {
+	/*设置边框*/
+	border: 1px solid black;
+}
