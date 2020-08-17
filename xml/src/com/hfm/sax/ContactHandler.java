@@ -1,6 +1,6 @@
 package com.hfm.sax;
 
-import com.hfm.entity.Contact;
+import com.hfm.pojo.Contact;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -18,7 +18,7 @@ public class ContactHandler extends DefaultHandler {
     /**
      * 存储Contact对象
      */
-    private List<com.hfm.entity.Contact> contacts = new ArrayList<Contact>();
+    private List<com.hfm.pojo.Contact> contacts = new ArrayList<Contact>();
     private Contact contact = null;
     private String lastTag;
 

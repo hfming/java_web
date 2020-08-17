@@ -1,6 +1,6 @@
 package com.hfm.sax;
 
-import com.hfm.entity.Contact;
+import com.hfm.pojo.Contact;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;

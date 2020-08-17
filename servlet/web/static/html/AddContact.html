@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加联系人</title>
+	</head>
+
+	<body>
+		<form action="/servlet/addContact" method="post" target="_self">
+			<table border="1px" align="center" cellspacing="0px" width="50%">
+				<thead>
+					<caption>添加联系人</caption>
+				</thead>
+				<tbody>
+					<tr>
+						<th>输入项</th>
+						<th>输入框</th>
+					</tr>
+					<tr>
+						<td><label for="name">姓名</label></td>
+						<td><input type="text" placeholder="请输入用户名" id="name" name="name"/></td>
+					</tr>
+					<tr>
+						<td><label for="gender">性别</label></td>
+						<td>
+							<input type="radio" value="boy" id="gender" name="gender" checked="checked" />男
+							<input type="radio" value="girl" id="gender" name="gender" />女
+						</td>
+					</tr>
+					<tr>
+						<td><label for="age">年龄</label></td>
+						<td><input type="number" placeholder="请输入年龄" id="age" name="age" /></td>
+					</tr>
+					<tr>
+						<td><label for="phone">电话</label></td>
+						<td><input type="text" placeholder="请输入电话" id="phone" name="phone"/></td>
+					</tr>
+					<tr>
+						<td><label for="email">邮箱</label></td>
+						<td><input type="email" placeholder="请输入邮箱" id="email" name="email" /></td>
+					</tr>
+					<tr>
+						<td><label for="address">地址</label></td>
+						<td><input type="text" placeholder="请输入地址" id="address" name="adderss"/></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="添加" />
+							<input type="reset" value="重置" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+
+</html>

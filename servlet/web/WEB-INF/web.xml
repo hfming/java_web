@@ -8,7 +8,7 @@
         <!--servlet 名称,自定义，一般为类名-->
         <servlet-name>ServletImpl</servlet-name>
         <!-- servlet 类的全名：包名+类名-->
-        <servlet-class>com.hfm.servlet.ServletImpl</servlet-class>
+        <servlet-class>com.hfm.servlet.create.ServletImpl</servlet-class>
     </servlet>
 
     <!--设置servlet 的访问路径-->
@@ -25,7 +25,7 @@
         <!--servlet 名称,自定义，一般为类名-->
         <servlet-name>ExtendsGenericServlet</servlet-name>
         <!-- servlet 类的全名：包名+类名-->
-        <servlet-class>com.hfm.servlet.ExtendsGenericServlet</servlet-class>
+        <servlet-class>com.hfm.servlet.create.ExtendsGenericServlet</servlet-class>
     </servlet>
 
     <!--设置servlet 的访问路径-->
@@ -42,7 +42,7 @@
         <!--servlet 名称,自定义，一般为类名-->
         <servlet-name>ExtendsHttpServlet</servlet-name>
         <!-- servlet 类的全名：包名+类名-->
-        <servlet-class>com.hfm.servlet.ExtendsHttpServlet</servlet-class>
+        <servlet-class>com.hfm.servlet.create.ExtendsHttpServlet</servlet-class>
     </servlet>
 
     <!--设置servlet 的访问路径-->
@@ -53,12 +53,43 @@
         <url-pattern>/exHttpServlet</url-pattern>
     </servlet-mapping>
 
+    <!-- servlet 配置信息-->
     <servlet>
+        <!-- servlet 内部名称-->
         <servlet-name>AutoServlet</servlet-name>
-        <servlet-class>com.hfm.servlet.AutoServlet</servlet-class>
+        <!-- servlet 类的全名：包名 + 类名-->
+        <servlet-class>com.hfm.servlet.create.AutoServlet</servlet-class>
     </servlet>
+
+    <!-- servlet 映射信息-->
     <servlet-mapping>
+        <!-- 与 servlet 配置信息中的 servlet 内部名称相同-->
         <servlet-name>AutoServlet</servlet-name>
+        <!-- servlet 映射路径，访问 servlet 的 URI -->
         <url-pattern>/autoServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletConfigTest</servlet-name>
+        <servlet-class>com.hfm.servlet.object.ServletConfigTest</servlet-class>
+        <!--  配置 servlet 初始化参数 -->
+        <init-param>
+            <param-name>path</param-name>
+            <param-value>web\static\txt\bbb.txt</param-value>
+        </init-param>
+        <init-param>
+            <param-name>BBB</param-name>
+            <param-value>BBB's value</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletConfigTest</servlet-name>
+        <url-pattern>/servletConfigTest</url-pattern>
+    </servlet-mapping>
+
+    <!-- 全局参数：定义位置 web-app 内部，servlet 外部 -->
+    <context-param>
+        <param-name>myParam</param-name>
+        <param-value>Test</param-value>
+    </context-param>
 </web-app>

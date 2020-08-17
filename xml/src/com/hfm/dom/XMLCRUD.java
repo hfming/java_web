@@ -1,6 +1,6 @@
 package com.hfm.dom;
 
-import com.hfm.entity.Contact;
+import com.hfm.pojo.Contact;
 import com.hfm.util.XMLManager;
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -103,6 +103,23 @@ public class XMLCRUD {
         List<Element> contacts = rooelement.elements("contact");
         for (Element contact : contacts) {
             if (id.equals(contact.elementText("id"))) {
+                rooelement.remove(contact);
+                // 删除自己
+                // contact.detach();
+                return contact;
+            }
+        }
+        return null;
+    }
+    /**
+     * 删除元素
+     * @param rooelement
+     * @param id
+     */
+    private static Element removeContactByAttrId(Element rooelement, String id) {
+        List<Element> contacts = rooelement.elements("contact");
+        for (Element contact : contacts) {
+            if (id.equals(contact.attributeValue("id"))) {
                 rooelement.remove(contact);
                 // 删除自己
                 // contact.detach();

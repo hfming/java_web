@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<contacts> 
+  <contact id="6ce9b85b-70ed-488b-b759-644aba364b03"> 
+    <name>黄福明</name>  
+    <gender>boy</gender>  
+    <age>26</age>  
+    <email>hfming2016@163.com</email>  
+    <phone>13758860183</phone>  
+    <address>zhejiangcangnan</address> 
+  </contact>  
+  <contact id="4445056b-9154-4c64-aebe-845bae344238"> 
+    <name>拼多多</name>  
+    <gender>girl</gender>  
+    <age>12</age>  
+    <email>hfming206@163.com</email>  
+    <phone>13758860186</phone>  
+    <address>zhejiang</address> 
+  </contact> 
+</contacts>

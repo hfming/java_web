@@ -1,6 +1,6 @@
 package com.hfm.dom;
 
-import com.hfm.entity.Contact;
+import com.hfm.pojo.Contact;
 import com.hfm.util.XMLManager;
 import org.dom4j.Element;
 

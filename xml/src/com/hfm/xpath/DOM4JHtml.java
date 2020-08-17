@@ -1,6 +1,6 @@
 package com.hfm.xpath;
 
-import com.hfm.entity.Person;
+import com.hfm.pojo.Person;
 import com.hfm.util.XMLManager;
 import org.dom4j.Document;
 import org.dom4j.Node;
