@@ -1,0 +1,42 @@
+* {
+	list-style: none;
+}
+
+.emoji {
+	margin: 50px;
+}
+
+.emoji ul {
+	overflow: hidden;
+}
+
+.emoji li {
+	float: left;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+
+.emoji img {
+	cursor: pointer;
+}
+
+#leftName,
+#btn,
+#rightName {
+	float: left;
+	width: 100px;
+	height: 300px;
+}
+
+#toRight,
+#toLeft {
+	margin-top: 100px;
+	margin-left: 30px;
+	width: 50px;
+}
+
+.border {
+	height: 500px;
+	padding: 100px;
+}

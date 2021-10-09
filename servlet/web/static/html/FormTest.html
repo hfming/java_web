@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Get 与 Post </title>
+		<style type="text/css">
+			.form {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="form">
+			<form action="http://127.0.0.1/servlet/requestTest" method="get">
+				<div align="center">Get 请求表单</div>
+				<label for="username">用户名：</label>
+				<input type="text" placeholder="请输入用户名" id="username" name="username" /><br />
+				<br />
+				<label for="password">密码：</label>
+				<input type="password" id="password" placeholder="请输入密码" name="password"/>
+				<br />
+				<input type="submit" value="Get 方式提交" />
+			</form>
+		</div>
+		<div class="form">
+			<form action="http://127.0.0.1/servlet/requestTest" method="post">
+				<div align="center">Post 请求表单</div>
+				<label for="name">用户名：</label>
+				<input type="text" placeholder="请输入用户名" id="name" name="uname"/><br />
+				<br />
+				<label for="pwd">密码：</label>
+				<input type="password" id="pwd" placeholder="请输入密码" name="pwd" />
+				<br />
+				<input type="submit" value="Post 方式提交" />
+			</form>
+		</div>
+	</body>
+
+</html>

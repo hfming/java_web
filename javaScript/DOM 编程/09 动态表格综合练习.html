@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>09 动态表格综合练习</title>
+		<link rel="stylesheet" href="09 动态表格综合练习.css" type="text/css" />
+	</head>
+
+	<script src="02 动态表格综合练习.js" type="text/javascript"></script>
+	<script src=""></script>
+
+	<body>
+		<table id="table_1">
+			<thead>
+				<caption>动态表格综合练习</caption>
+			</thead>
+			<tbody>
+				<tr id="tr_1">
+					<td>选中</td>
+					<td>编号</td>
+					<td>用户名</td>
+					<td>密码</td>
+					<td>年龄</td>
+					<td>地址</td>
+					<td>操作</td>
+				</tr>
+			</tbody>
+			<tr>
+				<td> <input type="checkbox" onchange="selectAll()" /></td>
+				<td colspan="6">
+					<span onclick="removeAll()">全部删除</span>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<form onsubmit="return checkAll()">
+			<table>
+				<thead>
+					<caption>输入数据表</caption>
+				</thead>
+				<tbody>
+					<tr>
+						<td>编号：</td>
+						<td>
+							<input type="number" id="number">
+							<span id="numberTip"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>用户名：</td>
+						<td>
+							<input type="text" id="userName" onblur="checkName()" placeholder="4到16位字符串" />
+							<span id="nameTip"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>密码：</td>
+						<td>
+							<input type="password" id="password" onblur="checkPwd()" placeholder="6到16位数字与字母" />
+							<span id="pwdTip"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>年龄：</td>
+						<td>
+							<input type="number" id="age" />
+							<span id="ageTip"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>地址：</td>
+						<td>
+							<input type="text" id="address" />
+							<span id="adderssTip"></span>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">
+							<input type="button" value="添加" onclick="addUser()" />
+							<input type="reset" value="重置" />
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</body>
+
+</html>

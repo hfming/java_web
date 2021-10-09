@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+	</head>
+
+	<body>
+		<form action="/session/changeProduct" method="post">
+			<table align="center" border="1px" cellspacing="0px" width="400px">
+				<thead>
+					<caption>商品详情</caption>
+					<tr>
+						<th>项目名称</th>
+						<th>查询结果</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>商品名称</td>
+						<td><input type="text" value="联想笔记本" name="name" /> </td>
+					</tr>
+					<tr>
+						<td>商品型号</td>
+						<td><input type="text" value="LN0001" name="type" /> </td>
+					</tr>
+					<tr>
+						<td>商品价格</td>
+						<td><input type="number" value="3000" name="price" /> </td>
+					</tr>
+					<tr>
+						<td>商品详情</td>
+						<td>
+							<textarea>
+							联想笔记本时是联想旗下的主要产品之一
+							</textarea>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="确认修改" />
+							<a href="/session/products">
+								<input type="button" value="返回首页" id="but" />
+							</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</body>
+
+</html>

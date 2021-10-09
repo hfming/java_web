@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>18 CSS 综合练习</title>
+		<link rel="stylesheet" href="19 CSS 综合练习.css" type="text/css" />
+	</head>
+
+	<body>
+		<div id="rg_layout">
+			<div class="inner" id="div_left">
+				<span id="rg_sp_1">新用户注册</span><br />
+				<span id="rg_sp_2">USER REGISTER</span>
+			</div>
+
+			<div class="inner" id="div_center">
+				<form action="#" method="post">
+					<table>
+						<tr>
+							<td class="td_left"><label for="username">用户名</label></td>
+							<td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left"><label for="password">密码</label></td>
+							<td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left"><label for="email">Email</label></td>
+							<td class="td_right"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left"><label for="name">姓名</label></td>
+							<td class="td_right"><input type="text" name="name" id="name" placeholder="请输入姓名"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left"><label for="tel">手机号</label></td>
+							<td class="td_right"><input type="text" name="tel" id="tel" placeholder="请输入手机号"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left">性别</td>
+							<td class="td_right">
+								<input type="radio" name="gender" value="male" checked="checked"> 男
+								<input type="radio" name="gender" value="female"> 女
+							</td>
+						</tr>
+
+						<tr>
+							<td class="td_left">出生日期</td>
+							<td class="td_right"><input type="date" name="birthday"></td>
+						</tr>
+
+						<tr>
+							<td class="td_left"><label for="checkcode">验证码</label></td>
+							<td class="td_right">
+								<input type="text" name="checkcode" id="checkcode" placeholder="请输入验证码">
+								<img src="Resources/images/verify_code.jpg" id="img_check">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" value="注册" id="btn_sub">
+								<input type="reset" value="重置" id="btn_res">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="inner" id="div_right">
+				<span>已有账户？</span>
+				<a href="" target="_blank">立即登录</a>
+			</div>
+		</div>
+	</body>
+
+</html>

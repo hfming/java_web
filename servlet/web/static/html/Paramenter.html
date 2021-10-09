@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Servlet 获取表单参数</title>
+	</head>
+
+	<body>
+		<div>
+			<form action="http://localhost/servlet/getParamenter" method="get">
+				<table border="1px" align="center" cellspacing="0px" width="250px">
+					<thead>
+						<caption>注册页面</caption>
+					</thead>
+					<tbody>
+						<tr>
+							<th>输入项</th>
+							<th>输入框</th>
+						</tr>
+						<tr>
+							<td><label for="userName">用户名</label></td>
+							<td><input type="text" placeholder="请输入用户名" id="userName" name="username"/></td>
+						</tr>
+						<tr>
+							<td><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label></td>
+							<td><input type="password" placeholder="请输入用户名" id="password" name="password" /></td>
+						</tr>
+						<tr>
+							<td><label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label></td>
+							<td><input type="email" placeholder="请输入邮箱" id="email" name="email"/></td>
+						</tr>
+						<tr>
+							<td><label for="name">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label></td>
+							<td><input type="text" placeholder="请输入姓名" id="name" name="name"/></td>
+						</tr>
+						<tr>
+							<td><label for="phone">手机号</label></td>
+							<td><input type="text" placeholder="请输入手机号" id="phone" name="phone"/></td>
+						</tr>
+						<tr>
+							<td><label for="gender">密&nbsp;&nbsp;&nbsp;&nbsp;码</label></td>
+							<td>
+								<input type="radio" value="boy" id="gender" name="gender" checked="checked" />男
+								<input type="radio" value="girl" id="gender" name="gender" />女
+							</td>
+						</tr>
+						<tr>
+							<td><label for="vCode">验证码</label></td>
+							<td>
+								<input type="text" placeholder="请根据图片输入验证码" id="vCode" name="vCode" />
+								<img src="../../../../html/Resourecs/img/verify_code.jpg" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<input type="submit" value="注册" />
+								<input type="reset" value="重置" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+
+		</div>
+	</body>
+
+</html>

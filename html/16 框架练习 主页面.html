@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>16 框架练习 主页面</title>
+	</head>
+	<!-- cols 按照列的方式划分框架-->
+	<!-- rows 按照行的方式划分框架-->
+	<!-- num% 划分空间 * 通配符表示剩余-->
+	<!-- frameset 放在 body中无效，需要放在body 外面-->
+	<frameset rows="10%,80%,10%">
+		<!--frame 表示一个框架，框架中含有一个html 页面-->
+		<!-- 两个及两个以上的frame 包含在 frameset 中-->
+		<frame src="16 框架练习 头部页面.html" />
+		<frameset cols="20%,*">
+			<frame src="16 框架练习 左页面.html" />
+			<frame src="16 框架练习 右页面.html" name="main" />
+		</frameset>
+		<frame src="16 框架练习 底页面.html" />
+	</frameset>
+
+	<body></body>
+	<!-- frameset 放在 body中无效，需要放在body 外面-->
+</html>

@@ -1,0 +1,5 @@
+/* 元素选择器,ID 选择器,类选择器*/
+#div1,.div,a{
+	font: "楷体";
+	color: aquamarine;
+}

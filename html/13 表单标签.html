@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>0013 HTML 表单</title>
+	</head>
+
+	<body>
+		<!--action: 表单提交到的地址.。点击了 submit 的提交按钮，就会把数据提交到 action 的地址-->
+		<!--method: 提交方式。两种提交方式：get;1）提交的数据会放到地址栏上面;2) get 提交的数据不超过 1kb，只适合简单的数据post;1）提交的数据不会放到地址栏;2）post 提交的数据没有限制。比如文件上传-->
+		<form action="http://localhost:8080/demo/ServletDemo" title="表单" method="get">
+			<!--label：指定输入项的文字描述信息-->
+			<!--注意：label的for属性一般会和 input 的 id属性值 对应。如果对应了，则点击label区域，会让input输入框获取焦点。-->
+			<label for="userName">单行输入域：</label>
+			<!--name: 这个必须填。该 name 的属性值用于给后台程序获取该标签输入的内容-->
+			<!--size: 可以输入的字符数量-->
+			<!--placeholder：指定输入框的提示信息，当输入框的内容发生变化，会自动清空提示信息	-->
+			<input type="text" name="userName" size="10" placeholder="提示信息" id="userName"><br />
+
+			<!--密码输入域:以非明文的效果获取用户输入的数据-->
+			密码输入域：<input type="password" placeholder="请输入密码" name="userPassword"><br>
+
+			<!--提交按钮： 点击这个按钮，form中的全部数据就会发送到后台value: 表示按钮显示的文本-->
+			提交按钮：<input type="submit"><br>
+
+			<!--注意：1)如果是同一组的单选选项就使用相同的name 属性值;-->
+			<!--2)单选按钮的 value 属性一定填。这个 value 的值就是发送给后台程序的内容-->
+			<!--3)默认选中 checked="checked" 或者直接 checked -->
+			单选：<input type="radio" name="gender" value="1">1
+			<input type="radio" name="gender" value="2" checked="checked">2<br>
+
+			<!--注意：1）如果是同一组的多选选项就使用相同的 name 属性值-->
+			<!--2)多选按钮的 value 属性一定填。这个 value 的值就是发送给后台程序的内容-->
+			<!--3)默认选中 checked="checked" -->
+			多选：<input type="checkbox" name="hobit" value="篮球"> 篮球
+			<input type="checkbox" name="hobit" value="足球"> 足球
+			<input type="checkbox" name="hobit" value="羽毛球"> 羽毛球<br>
+
+			<!--特点：不会显示到 html 页面上，但可以携带数据。用于携带数据，但是在页面上不会显示效果;-->
+			<!--当我们要发送某些信息，而这些信息，不需要用户参与，就可以使用隐藏域（提交的时候同时发送给服务器）-->
+			<!--注意：1）name 属性就是后台程序获取的标记-->
+			<!--2) 这个 value 的值就是发送给后台程序的内容-->
+			隐藏域：<input type="hidden" name="id" value="0001"><br>
+
+			<!--普通按钮-->
+			普通按钮<input type="button" value="普通按钮" /><br />
+			<!--重置按钮： 点击这个按钮，form 中的所有标签返回到初始默认状态-->
+			重置按钮:<input type="reset" value="重置按钮"><br>
+			<!--图片按钮 功能与提交按钮一致，也可以用于提交数据-->
+			图片按钮：<input type="image" src="Resourecs/image/19.jpg" width="50"/><br />
+
+			<!--file：文件选择框-->
+			文件：<input type="file" name="file" /><br />
+
+			<!--取色器-->
+			取色器：<input type="color" name="color" /><br />
+
+			<!--日期-->
+			日期(年月日)：<input type="date" name="birthday" /><br /> 日期(年月日小时分钟)：
+			<input type="datetime-local" name="birthday" /><br />
+
+			<!--邮箱，会自动进行正则校验-->
+			邮箱：<input type="email" /><br />
+
+			<!--数字-->
+			数字：<input type="number" /><br />
+
+			<!--注意：1）name 属性就是后台程序获取的标记-->
+			<!--2)下拉选项的 option 标签中的 value 属性一定填。这个 value 的值就是发送给后台程序的内容-->
+			<!--select 标签是下拉列表框-->
+			<!--option 标签是下拉列表框中的选项 selected="selected"设置默认选中-->
+			下拉选项：
+			<select name="city">
+				<option value="关东">关东</option>
+				<option value="关西">关西</option>
+				<option value="云南">云南</option>
+			</select><br/>
+
+			<!--多行输入域：可以输入多行文本rows: 一共有几行|cols: 一行可以输入几行字符-->
+			<!--起始标签和结束标签中的内容是默认值-->
+			多行输入域：<textarea rows="10px" cols="10px" name="text">起始标签和结束标签中的内容是默认值 </textarea><br />
+		</form>
+	</body>
+
+</html>

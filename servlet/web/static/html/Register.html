@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<script>
+			window.onload = function() {
+				var image = document.getElementById('codeImage');
+				var a = document.getElementById('aCode');
+
+				image.onclick = function() {
+					// 加时间戳 让其永不取缓存中的数据
+					var date = new Date();
+					image.src = "/servlet/checkCode?" + date.getTime();
+				}
+				a.onclick = function() {
+					var date = new Date();
+                    image.src = "/servlet/checkCode?" + date.getTime();
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<img src="/servlet/checkCode" id="codeImage">
+		<br />
+
+		<a href="" id="aCode">看不清楚，更换一张</a>
+	</body>
+
+</html>

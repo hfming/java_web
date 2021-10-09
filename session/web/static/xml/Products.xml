@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+	<Product id="1">
+		<name>联想笔记本</name>
+		<price>3000</price>
+		<type>LN0001</type>
+	</Product>
+	<Product id="2">
+		<name>惠普笔记本</name>
+		<price>4000</price>
+		<type>HP0012</type>
+	</Product>
+	<Product id="3">
+		<name>戴尔笔记本</name>
+		<price>5000</price>
+		<type>Dell003</type>
+	</Product>
+	<Product id="4">
+		<name>宏碁笔记本</name>
+		<price>3000</price>
+		<type>Acer0004</type>
+	</Product>
+</Products>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>06 HTML 超链接标签</title>
+	</head>
+
+	<body>
+		<a name="top"></a>
+		<!--herf 属性 表示连接地址-->
+		<!-- file:// 本地文件协议（本地或局域网） 在href中不写就是使用这个默认协议 -->
+		<a href="Resourecs/image/16.jpg">超链接标签</a><br>
+
+		<!-- http:// http 协议（执行流程） 通常连接到域名或 IP 地址 -->
+		<a href="http://www.w3school.com.cn">w3school</a><br>
+		<a href="http://www.movie.com/电影">默认的下载工具</a><br>
+
+		<!-- thunder： 迅雷下载软件的协议;mailto: 调用本地的发送邮件的客户端软件 -->
+		<a href="thunder://www.movie.com/电影">迅雷下载协议</a><br>
+		<a href="mailto://hfming2016@163.com">邮件发送协议</a><br>
+
+		<!-- target： 打开资源方式  _self: 当前窗口打开 默认为当前窗口打开  _blank: 新窗口打开 -->
+		<a href="http://www.w3school.com.cn" target="_self">w3school当前窗口打开</a><br>
+		<a href="http://www.w3school.com.cn" target="_blank">w3school新建窗口打开</a><br>
+
+		<!-- 打锚点： <a name="锚点名称"></a> -->
+		<!-- 到锚点位置：<a href="文件名#锚点名称">内容</a> -->
+		<a href="05 列表标签.html#001">去到锚点</a>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		<!--相同HTML 文件可以省略文件名-->
+		<a href="#top">返回顶部</a><br />
+		<br />
+
+		<!--与图片一起使用-->
+		<a href="https://www.bing.com"><img src="Resourecs/image/17.jpg" width="200" title="跳转网站" /></a>
+
+	</body>
+
+</html>

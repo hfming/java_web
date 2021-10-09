@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>06 标签属性练习</title>
+		<script src="06 标签属性练习.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div>商品列表</div>
+		<input type="checkbox" onclick="changeAll()" name="all" />全选<br/>
+		<input type="checkbox" name="shoping" value="7899" onclick="getSum2()"/>惠普 暗影精灵 7899 元<br/>
+		<input type="checkbox" name="shoping" value="7999" onclick="getSum2()"/>华硕 魔霸新锐 7999 元<br/>
+		<input type="checkbox" name="shoping" value="7499" onclick="getSum2()"/>宏碁 暗影骑士 7499 元<br/>
+		<input type="checkbox" name="shoping" value="10999" onclick="getSum2()"/>联想 ThinkPad 10999 元<br/>
+		<input type="checkbox" name="shoping" value="39999" onclick="getSum2()"/>外星人 Alienware 39999 元<br/>
+		<input type="checkbox" name="shoping" value="15999" onclick="getSum2()"/>戴尔 XPS 15999 元<br/>
+		<input type="checkbox" onclick="changeAll()" name="all" />全选<br/>
+		<div>
+			总金额：
+			<span id="allMoney"></span>
+		</div>
+
+	</body>
+
+</html>

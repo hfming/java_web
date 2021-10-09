@@ -1,0 +1,5 @@
+/* 父选择器*/
+div > span{
+	font-size: 24px;
+	color: gray;
+}

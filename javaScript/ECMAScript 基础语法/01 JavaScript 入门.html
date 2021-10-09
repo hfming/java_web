@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>01 JavaScript 入门</title>
+
+	</head>
+
+	<!-- javaScript 使用方式一：内部样式-->
+	<!-- 定义<script>，标签体内容就是js代码-->
+	<!-- 可以放在任意位置，但是位置与其执行的顺序有直接关系(文件加载导致的),建议放到 body 标签之前-->
+	<script type="text/javascript">
+		alert("内部 JavaScript");
+	</script>
+	
+	<!--导入外部  js文件-->
+	<!--src 属性专门用来引入 js 文件路径（可以是相对路径，也可以是绝对路径）-->
+	<script src="01 JavaScript 入门.js" type="text/javascript"></script>
+
+	<body>
+		<form action="#" target="_blank">
+			<div>
+				<label for="username">用户名：</label>
+				<input type="text" name="username" placeholder="请输入用户名" id="userName" />
+			</div>
+
+			<div>
+				<label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+				<input type="password" name="password" placeholder="请输入密码" id="password" />
+			</div>
+
+			<div>
+				<input type="submit" value="登录" />
+				<input type="reset" value="重置" />
+			</div>
+		</form>
+
+	</body>
+
+</html>

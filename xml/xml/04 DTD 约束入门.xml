@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--外部导入 DTD 声明-->
+<!DOCTYPE note SYSTEM "04 DTD 约束.dtd">
+
+<!--内部 DTD 声明-->
+<!--DTD 约束声明 +根标签-->
+<!--!DOCTYPE note (第二行)定义此文档是 note 类型的文档。-->
+<!--!ELEMENT note (第三行)定义 note 元素有四个元素："to、from、heading,、body"-->
+<!--!ELEMENT to (第四行)定义 to 元素为 "#PCDATA" 类型-->
+<!--!ELEMENT from (第五行)定义 from 元素为 "#PCDATA" 类型-->
+<!--!ELEMENT body (第七行)定义 body 元素为 "#PCDATA" 类型-->
+<!--!ELEMENT heading (第六行)定义 heading 元素为 "#PCDATA" 类型-->
+<!DOCTYPE note[
+        <!ELEMENT note      (to,from,heading,body)>
+        <!ELEMENT to        (#PCDATA)>
+        <!ELEMENT from      (#PCDATA)>
+        <!ELEMENT heading   (#PCDATA)>
+        <!ELEMENT body      (#PCDATA)>
+        ]>
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Dont’t forget me this weekend!</body>
+</note>

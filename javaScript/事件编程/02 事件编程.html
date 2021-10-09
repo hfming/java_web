@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>02 事件编程</title>
+	</head>
+	<script src="02 鼠标点击事件.js" type="text/javascript"></script>
+	<script src="03 聚焦相关事件.js" type="text/javascript"></script>
+	<script src="04 选择相关事件.js" type="text/javascript"></script>
+	<script src="05 鼠标移动相关事件.js" type="text/javascript"></script>
+	<script src="06 表单提交事件.js" type="text/javascript"></script>
+
+	<body>
+		<!--鼠标单击事件 onclick-->
+		<input type="button" value="鼠标单击事件" onclick="myOncilck()" /><br />
+		<input type="button" value="动态注册" id="test" /><br />
+		<!--鼠标双击事件 ondblclick-->
+		<input type="button" value="鼠标双击事件" ondblclick="myOndblclick()" /><br />
+
+		<!--聚焦事件 onfocus-->
+		<label for="username">请输入用户名：</label>
+		<input type="text" placeholder="聚焦事件" onfocus="myFocus()" id="username" onblur="myBlur()" />
+		<span id="userNameTip"></span><br />
+
+		<!--选项改变 onchange-->
+		<label for="select">省份选择：</label>
+		<select id="select" onchange="mySelect()" name="select">
+			<option value="gd">广东</option>
+			<option value="gx">广西</option>
+			<option value="hn">湖南</option>
+		</select>
+		<label for="city">省份选择：</label>
+		<select id="city" name="city"></select><br />
+
+		<!--鼠标移动事件-->
+		<div id="div1" onmouseover="testOver()" onmouseout="testOut()">鼠标移动</div>
+		
+		<form action="01 事件编程入门.html" method="get">
+			<!-- return false 可以阻止表单提交 静态注册不能省略 return-->
+			<!-- 动态注册可以省略 return -->
+			<input type="submit" onclick="return mySubmit()" />
+		</form>
+	</body>
+
+</html>

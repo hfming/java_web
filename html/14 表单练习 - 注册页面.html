@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>0014 表单练习 - 注册页面</title>
+	</head>
+
+	<body>
+		<!--独立编写一个注册网页-->
+
+		<form action="http://localhost:8080/demo/ServletDemo" method="post">
+			<table border="1px" align="center" cellspacing="0px" width="50%">
+				<thead>
+					<caption>注册页面</caption>
+				</thead>
+				<tbody>
+					<tr>
+						<th>输入项</th>
+						<th>输入框</th>
+					</tr>
+					<tr>
+						<td><label for="userName">用户名</label></td>
+						<td><input type="text" placeholder="请输入用户名" id="userName" /></td>
+					</tr>
+					<tr>
+						<td><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label></td>
+						<td><input type="password" placeholder="请输入用户名" id="password" /></td>
+					</tr>
+					<tr>
+						<td><label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label></td>
+						<td><input type="email" placeholder="请输入邮箱" id="email" /></td>
+					</tr>
+					<tr>
+						<td><label for="name">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label></td>
+						<td><input type="text" placeholder="请输入姓名" id="name" /></td>
+					</tr>
+					<tr>
+						<td><label for="phone">手机号：</label></td>
+						<td><input type="text" placeholder="请输入手机号" id="phone" /></td>
+					</tr>
+					<tr>
+						<td><label for="gender">性&nbsp;&nbsp;&nbsp;&nbsp;别</label></td>
+						<td>
+							<input type="radio" value="boy" id="gender" name="gender" checked="checked" />男
+							<input type="radio" value="girl"  name="gender" />女
+						</td>
+					</tr>
+					<tr>
+						<td><label for="vCode">验证码</label></td>
+						<td>
+							<input type="text" placeholder="请根据图片输入验证码" id="vCode" />
+							<img src="Resourecs/img/verify_code.jpg" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="注册" />
+							<input type="reset" value="重置" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+
+</html>

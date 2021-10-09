@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+		<title>03 全局 CSS 样式</title>
+
+		<!-- Bootstrap -->
+		<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- 按钮 -->
+		<button type="button" class="btn btn-default">默认</button>
+		<button type="button" class="btn btn-primary">首选项</button>
+		<button type="button" class="btn btn-secondary">次要的</button>
+		<button type="button" class="btn btn-success">成功</button>
+		<button type="button" class="btn btn-danger">危险</button>
+		<button type="button" class="btn btn-warning">警告</button>
+		<button type="button" class="btn btn-info">信息</button>
+		<button type="button" class="btn btn-light">亮色</button>
+		<button type="button" class="btn btn-dark">暗色</button>
+		<button type="button" class="btn btn-link">链接</button>
+
+		<!--图片-->
+		<!--
+			img-fluid 自适应
+			img-responsive 原图片大小
+		-->
+		<img src="../../html/Resourecs/image/banner_1.jpg" class="img-fluid" alt="Responsive image">
+
+		<!--表格-->
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">First</th>
+					<th scope="col">Last</th>
+					<th scope="col">Handle</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td colspan="2">Larry the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--表单-->
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+	</body>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="../dist/js/bootstrap.min.js"></script>
+
+</html>

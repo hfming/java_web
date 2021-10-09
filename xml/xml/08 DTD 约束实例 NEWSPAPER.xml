@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--报纸文章 DTD-->
+<!DOCTYPE NEWSPAPER [
+        <!ELEMENT NEWSPAPER (ARTICLE+)>
+        <!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>
+        <!ELEMENT HEADLINE (#PCDATA)>
+        <!ELEMENT BYLINE (#PCDATA)>
+        <!ELEMENT LEAD (#PCDATA)>
+        <!ELEMENT BODY (#PCDATA)>
+        <!ELEMENT NOTES (#PCDATA)>
+
+        <!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
+        <!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>
+        <!ATTLIST ARTICLE DATE CDATA #IMPLIED>
+        <!ATTLIST ARTICLE EDITION CDATA #IMPLIED>
+
+        <!ENTITY NEWSPAPER "Vervet Logic Times">
+        <!ENTITY PUBLISHER "Vervet Logic Press">
+        <!ENTITY COPYRIGHT "Copyright 1998 Vervet Logic Press">
+        ]>
+<!--有一个或多个 ARTICLE-->
+<NEWSPAPER>
+    <!-- ARTICLE 具有属性 AUTHOR EDITOR DATE EDITION -->
+    <ARTICLE AUTHOR="必须的" EDITOR="非必须" DATE="非必须" EDITION="非必须">
+        <!-- ARTICLE 具有 HEADLINE BYLINE LEAD BODY NOTES 元素-->
+        <HEADLINE>普通字符串</HEADLINE>
+        <BYLINE>普通字符串</BYLINE>
+        <LEAD>普通字符串</LEAD>
+        <BODY>普通字符串</BODY>
+        <NOTES>普通字符串</NOTES>
+    </ARTICLE>
+</NEWSPAPER>

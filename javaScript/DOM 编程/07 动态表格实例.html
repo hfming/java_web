@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>07 动态表格实例</title>
+	</head>
+	<script src="07 动态表格实例.js" type="text/javascript"></script>
+
+	<body>
+		<table border="1px" align="center" cellspacing="0px" width="50%">
+			<thead>
+				<caption>动态表格</caption>
+			</thead>
+			<tbody>
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>密码</th>
+				</tr>
+				<tr id="set">
+					<td></td>
+					<td>
+						用户名：<input type="text" id="userName" />
+					</td>
+					<td>
+						密码：<input type="password" id="password" />
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">
+						<input type="button" value="添加" onclick="addUser()" />
+						<input type="button" value="删除" onclick="removeUser()" />
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+
+</html>

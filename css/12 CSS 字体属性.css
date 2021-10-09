@@ -1,0 +1,16 @@
+span {
+	/*字体类型注意：这里的字体类型是读取系统的默认字体库，尽量使用通用的字体，如果你设置的字体，用户的系统上没有，就是使用默认的宋体显示。*/
+	font-family: "宋体";
+	
+	/*字体大小*/
+	font-size: 24px;
+	
+	/*字体样式: 正(normal 默认) 斜(italic)*/
+	font-style: italic;
+	
+	/*字体粗细 bold 加粗*/
+	font-weight: bold;
+	
+	/* font: 简写属性 */
+	/*font: italic bold 36px "黑体";*/
+}

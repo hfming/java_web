@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>13 CRUD 案例</title>
+		<script src="Resources/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+		<style type="text/css">
+			select {
+				width: 100px;
+				height: 140px;
+			}
+			
+			div {
+				width: 130px;
+				float: left;
+				text-align: center;
+			}
+			
+			@CHARSET "UTF-8";
+			#total {
+				width: 450px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			ul {
+				list-style-type: none;
+			}
+			
+			li {
+				border-style: solid;
+				border-width: 1px;
+				padding: 5px;
+				margin: 5px;
+				background-color: #99ff99;
+				float: left;
+			}
+			
+			.inner {
+				width: 400px;
+				border-style: solid;
+				border-width: 1px;
+				margin: 10px;
+				padding: 10px;
+				float: left;
+			}
+			
+			#employeeTable {
+				border-spacing: 1px;
+				background-color: black;
+				margin: 80px auto 10px auto;
+			}
+			
+			th,
+			td {
+				background-color: white;
+			}
+			
+			#formDiv {
+				width: 250px;
+				border-style: solid;
+				border-width: 1px;
+				margin: 50px auto 10px auto;
+				padding: 10px;
+			}
+			
+			#formDiv input {
+				width: 100%;
+			}
+			
+			.word {
+				width: 40px;
+			}
+			
+			.inp {
+				width: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="left">
+			<select multiple="multiple" name="sel01">
+				<option value="opt01">选项1</option>
+				<option value="opt02">选项2</option>
+				<option value="opt03">选项3</option>
+				<option value="opt04">选项4</option>
+				<option value="opt05">选项5</option>
+				<option value="opt06">选项6</option>
+				<option value="opt07">选项7</option>
+				<option value="opt08">选项8</option>
+			</select>
+
+			<button>选中添加到右边</button>
+			<button>全部添加到右边</button>
+		</div>
+		<div id="rigth">
+			<select multiple="multiple" name="sel02">
+			</select>
+			<button>选中删除到左边</button>
+			<button>全部删除到左边</button>
+		</div>
+		<hr />
+
+		<!-- 动态表格 -->
+		<table id="employeeTable">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Salary</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>Tom</td>
+				<td>tom@tom.com</td>
+				<td>5000</td>
+				<td>
+					<a href="deleteEmp?id=001">Delete</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Jerry</td>
+				<td>jerry@sohu.com</td>
+				<td>8000</td>
+				<td>
+					<a href="deleteEmp?id=002">Delete</a>
+				</td>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>bob@tom.com</td>
+				<td>10000</td>
+				<td>
+					<a href="deleteEmp?id=003">Delete</a>
+				</td>
+			</tr>
+		</table>
+
+		<div id="formDiv">
+			<h4>添加新员工</h4>
+
+			<table>
+				<tr>
+					<td class="word">name: </td>
+					<td class="inp">
+						<input type="text" name="empName" id="empName" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">email: </td>
+					<td class="inp">
+						<input type="email" name="email" id="email" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">salary: </td>
+					<td class="inp">
+						<input type="number" name="salary" id="salary" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button id="addEmpButton" value="abc">Submit</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+	<script src="13 CRUD 案例.js" type="text/javascript"></script>
+
+</html>

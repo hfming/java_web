@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<contacts> 
+  <contact id="002"> 
+    <id>002</id>  
+    <name>刘备</name>  
+    <gender>男</gender>  
+    <phone>13758867231</phone>  
+    <address>白帝城</address>  
+    <QQ>265548231</QQ> 
+  </contact>  
+  <contact> 
+    <id>003</id>  
+    <name>孙尚香</name>  
+    <gender>女</gender>  
+    <phone>13758867456</phone>  
+    <address>江东</address>  
+    <QQ>265587094</QQ> 
+  </contact> 
+</contacts>

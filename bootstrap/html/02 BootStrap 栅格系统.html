@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+		<title>02 BootStrap 栅格系统</title>
+		<link rel="stylesheet" href="02 BootStrap 栅格系统.css" type="text/css" />
+
+		<!-- Bootstrap -->
+		<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--定义容器-->
+		<!--container：两边留白-->
+		<div class="container inner"></div>
+		<!--container-fluid：每一种设备都是100%宽度-->
+		<div class="container-fluid inner">
+			<!--定义行-->
+			<div class="row inner">
+				<!--定义元素-->
+        <!--
+          col-lg-num 在大显示器显示
+          col-md-num 在中型设备显示
+          col-sm-num 在 pad 显示
+          col-xs-num 在手机显示
+          num 表示一个格子占据多少空间
+          举例：在大显示器显示12个格子 col-lg-1;在 pad 显示 6个格子 col-sm-2
+        -->
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+				<div class="col-lg-1 col-sm-2 inner">.col-md-1</div>
+			</div>
+      <div class="row inner">
+        <div class="col-md-8 inner">.col-md-8</div>
+        <div class="col-md-4 inner">.col-md-4</div>
+      </div>
+      <div class="row inner">
+        <div class="col-md-4 inner">.col-md-4</div>
+        <div class="col-md-4 inner">.col-md-4</div>
+        <div class="col-md-4 inner">.col-md-4</div>
+      </div>
+      <div class="row inner">
+        <div class="col-md-6 inner">.col-md-6</div>
+        <div class="col-md-6 inner">.col-md-6</div>
+      </div>
+		</div>
+
+	</body>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="../dist/js/bootstrap.min.js"></script>
+
+</html>

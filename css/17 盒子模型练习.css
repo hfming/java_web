@@ -1,0 +1,40 @@
+#main {
+	width: 500px;
+	height: 200px;
+	border-style: solid;
+	box-sizing: border-box;
+	background-image: url(Resources/images/login_bg.png);
+	background-repeat: no-repeat;
+}
+
+input[type=text],
+input[type=password] {
+	border-radius: 5px;
+}
+
+.log{
+	vertical-align:middle;
+}
+
+label {
+	text-align: right;
+}
+
+#user-name {
+	margin-left: 20%;
+	margin-top: 10%;
+}
+
+#user-pass {
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+input[type=submit] {
+	margin-left: 25%;
+	margin-top: 5%;
+}
+
+input[type=button] {
+	margin-left: 10%;
+}

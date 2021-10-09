@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>01 CSS 使用方式</title>
+
+		<!--CSS 使用 方式二：内部样式-->
+		<!--使用 style 的标签进行 css 控制，css 内容写在 style 标签体内。-->
+		<!--一次控制多个标签的样式。-->
+		<!--和 html 标签混杂在一起，不好维护。css 内容无法在多个 html 页面中重用。-->
+		<style type="text/css">
+			div {
+				color: blue;
+			}
+		</style>
+
+		<style type="text/css">
+			a {
+				font-size: 14px;
+				color: #0F0;
+			}
+		</style>
+
+		<!--CSS 使用 方式三：外部样式 -->
+		<!--1）建立独立后缀为 css 的文件，css 内容写在该文件中-->
+		<!--2）在使用 css 的 html 页面中，导入外部 css 文件-->
+		<!--rel	标识当前页面文件和引入文件的关系 如果值为 stylesheet 则代表是修饰与被修饰的关系-->
+		<!--href 引入外部资源的路径-->
+		<link href="01 CSS 使用方式 外部样式.css" rel="stylesheet" />
+		<link rel="stylesheet" href="01 CSS 使用方式 外部样式.css" type="text/css" />
+
+		<!--CSS 使用 方式三：外部样式 -->
+		<style>
+			@import "01 CSS 使用方式 外部样式.css";
+		</style>
+	</head>
+
+	<body>
+		<!--CSS 使用 方式一：内联方式/行内方式-->
+		<!--1）使用标签的style属性进行css控制，css写在style属性值中-->
+		<!--2）弊端：只能控制一个标签的样式-->
+		<a href="xxxx" style="font-size:24px;">超链接</a>
+		<div style="color:red;">hello css</div>
+
+		<div>内部样式</div>
+		<a href="XXXX">内部样式</a>
+
+		<div id="no1">外部样式</div>
+	</body>
+
+</html>

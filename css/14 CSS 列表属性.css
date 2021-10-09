@@ -1,0 +1,6 @@
+ul {
+	/*列表符号类型*/
+	list-style-type:binary;
+	/*设置列表符号的图片*/
+	list-style-image: url(../html/Resourecs/image/icon_5.jpg);
+}

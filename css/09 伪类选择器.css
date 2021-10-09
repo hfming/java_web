@@ -1,0 +1,28 @@
+/*伪类选择器*/
+/*使用 link 伪类控制--没有访问过的状态*/
+#a1:link {
+	font-size: 24px;
+	color: #F000FF;
+	text-decoration: none;
+}
+
+/*使用 visited 伪类控制--已经被访问过的状态（鼠标点下且松开）*/
+#a1:visited {
+	font-size: 24px;
+	color: #FFCCFF;
+	text-decoration: none;
+}
+
+/*使用 hover 伪类控制-鼠标经过的状态*/
+#a1:hover {
+	font-size: 35px;
+	color: #0B0B0B;
+	text-decoration: none;
+}
+
+/*使用 active 伪类控制--鼠标激活（按下但没有松开）的状态*/
+#a1:active {
+	font-size: 24px;
+	color: #00FF00;
+	text-decoration: underline;
+}

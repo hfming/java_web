@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!-- 配置 Filter 过滤器-->
+    <filter>
+        <!-- Filter 过滤器名称-->
+        <filter-name>HelloFilter</filter-name>
+        <!-- Filter 过滤器完整 类名+包名 -->
+        <filter-class>com.hfm.filter.HelloFilter</filter-class>
+        <!-- 初始化参数配置-->
+        <init-param>
+            <param-name>AAA</param-name>
+            <param-value>value</param-value>
+        </init-param>
+    </filter>
+    <!-- Filter 过滤器过滤路径配置-->
+    <filter-mapping>
+        <!-- Filter 过滤器名称，与 Filter 配置中的 filter-name 相同-->
+        <filter-name>HelloFilter</filter-name>
+        <!-- Filter 过滤器拦截路径-->
+        <url-pattern>/users</url-pattern>
+    </filter-mapping>
+
+    <context-param>
+        <param-name>AAA</param-name>
+        <param-value>ServletContext初始化参数</param-value>
+    </context-param>
+</web-app>
